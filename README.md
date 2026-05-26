@@ -130,7 +130,7 @@ OPENROUTER_API_KEY=your_openrouter_key
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| POST | `/analyze` | Full analysis — classification + LLM report |
+| POST | `/analyze` | Full analysis  classification + LLM report |
 | GET | `/health` | Service health check |
 | GET | `/sample-request` | Example request body |
 
