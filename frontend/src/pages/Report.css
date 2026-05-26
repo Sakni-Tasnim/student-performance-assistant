@@ -1,0 +1,196 @@
+.report-page { background: var(--cream); }
+
+.report-main {
+  padding-top: 52px;
+  padding-bottom: 80px;
+}
+
+/* Header */
+.report-eyebrow {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 10px;
+}
+
+.report-header {
+  margin-bottom: 36px;
+}
+
+.report-header h1 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: var(--navy);
+  margin-bottom: 16px;
+}
+
+.report-summary {
+  font-size: 1.05rem;
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+/* Warning */
+.report-warning {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: #fffbeb;
+  border: 1px solid #fcd34d;
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin-bottom: 32px;
+}
+
+.report-warning p {
+  font-size: 0.9rem;
+  color: #92400e;
+  line-height: 1.6;
+}
+
+/* Sections */
+.report-section { margin-bottom: 48px; }
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
+  font-size: 1.5rem;
+  color: var(--navy);
+}
+
+.avg-badge {
+  background: var(--navy);
+  color: var(--white);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.avg-badge strong { color: var(--amber); }
+
+/* Classifications */
+.classifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.subject-card { padding: 20px; }
+
+.subject-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.subject-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--navy);
+}
+
+.subject-grade {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.6rem;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+/* Recs */
+.recs-list { display: flex; flex-direction: column; gap: 12px; }
+
+.rec-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 18px 22px;
+}
+
+.rec-number {
+  min-width: 28px;
+  height: 28px;
+  background: var(--amber);
+  color: var(--navy);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.rec-item p {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.6;
+  padding-top: 3px;
+}
+
+/* Plan table */
+.plan-table { padding: 0; overflow: hidden; }
+
+.plan-row {
+  display: grid;
+  grid-template-columns: 100px 160px 1fr auto;
+  gap: 16px;
+  align-items: center;
+  padding: 14px 22px;
+  border-bottom: 1px solid rgba(15,31,56,0.06);
+}
+
+.plan-row:last-child { border-bottom: none; }
+.plan-row-alt { background: rgba(15,31,56,0.02); }
+
+.plan-day {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.plan-subject {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--navy);
+}
+
+.plan-objective {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* Motivation */
+.report-motivation {
+  background: var(--navy);
+  border-radius: var(--radius);
+  padding: 28px 32px;
+  margin-bottom: 40px;
+}
+
+.report-motivation p {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.3rem;
+  color: var(--cream);
+  line-height: 1.4;
+  font-style: italic;
+}
+
+.report-actions { display: flex; gap: 12px; }
+
+/* Mobile */
+@media (max-width: 600px) {
+  .plan-row { grid-template-columns: 80px 1fr; grid-template-rows: auto auto; }
+  .plan-objective { grid-column: 1 / -1; }
+  .classifications-grid { grid-template-columns: 1fr 1fr; }
+}

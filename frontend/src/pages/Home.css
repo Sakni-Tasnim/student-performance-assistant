@@ -1,0 +1,68 @@
+.home-main {
+  flex: 1;
+  padding-top: 72px;
+  padding-bottom: 80px;
+}
+
+.home-hero {
+  max-width: 580px;
+  margin-bottom: 64px;
+}
+
+.home-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 16px;
+}
+
+.home-title {
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  color: var(--navy);
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.home-title em {
+  font-style: italic;
+  color: var(--amber);
+}
+
+.home-subtitle {
+  font-size: 1.05rem;
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 460px;
+  margin-bottom: 36px;
+}
+
+.home-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  border-top: 3px solid var(--amber);
+}
+
+.feature-icon {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.feature-card h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.feature-card p {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
